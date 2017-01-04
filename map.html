@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>map</title>
+    <script src="js/react-0.14.0.js"></script>
+    <script src="js/react-dom.js"></script>
+    <script src="js/browser.min.js"></script>
+</head>
+<body>
+    <div id="map"></div>
+    <script type="text/babel">
+        var names=["Amy","Shieh","Kate"];
+        ReactDOM.render(
+            <div>
+                {
+                    names.map(function(name){
+                        return <h1>hello ! {name}</h1>
+                    })
+                }
+            </div>,
+            document.getElementById('map')
+        );
+    </script>
+</body>
+</html>
